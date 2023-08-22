@@ -1,3 +1,5 @@
-From openjdk
+FROM openjdk
+WORKDIR /usr/src/myapp
+COPY . /usr/src/myapp
 CMD ["java","-jar","dummy.jar"]
-Expose 7000
+EXPOSE 7000
